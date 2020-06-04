@@ -12,6 +12,8 @@ To facilitate application of CCSAS, we designed gRNA-taxon-sites and gRNAs for a
 
 
 ![](https://github.com/kevinzhongxu/CasOligo/tree/master/inst/extdata/oligo_distribution_among_taxa.png)
+**Fig.1** Distribution of the number of sgRNA-target-sites across metazoans and plant taxa for designing taxon-specific and CRISPR-Cas9 compatible gRNA.
+
 
 &nbsp;
 &nbsp;
@@ -73,16 +75,6 @@ This package depends on the pre-installation of following R package:
 &nbsp;
 &nbsp;
 
-# Documentation
-***
-&nbsp;
-
-All the documentation for `CasOligo` can be found on our website here:
-
-https://github.com/kevinzhongxu/CasOligo_documentation/
-
-&nbsp;
-&nbsp;
 
 # Citation
 ***
@@ -152,7 +144,9 @@ cas9.gRNA.oligo1(inseq=input_fasta_file)
 
 
 ## Example 3: Retrieve the 20nt gRNA-target-site oligonucleotide sequence from database
-We already made a database of gRNA-target-sites (Zhong et al., 2020) for almost all metazoans and plant species that are available in SILVA (Quast et al., 2003). If you have an idea on which host taxon to cut and its name, then you can use search.db.byname function to retrieve the oligo. 
+We already made a database of gRNA-target-sites (Zhong et al., 2020) for almost all metazoans and plant species that are available in SILVA (Quast et al., 2003). 
+
+If you have an idea on which host taxon to cut and its name, then you can use search.db.byname function to retrieve the oligo. 
 
 ```r
 #To sucessuffly search a database, the name of taxon should be same as Silva database
@@ -169,6 +163,16 @@ search.db.byname(query="Mollusca", cas="Cas12a")
 search.db.byname(query="Crassostrea gigas", cas="Cas12a")
   
 ```
+
+If you want to know the cut detail of of this gRNA-target-site, then you can use search.db.byid function as follows. 
+
+```r
+search.db.byid(query="ID_of_the_gRNA-target-site", cas="Name_of_Cas")
+
+search.db.byid(query="probe_022593", cas="Cas9")
+  
+```
+
 &nbsp;
 
 

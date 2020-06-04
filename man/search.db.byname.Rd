@@ -10,13 +10,13 @@ search.db.byname(query, cas = NULL)
 \item{query}{character, the name of host species or taxonomic group (from species to kingdom) that you expect the gRNA to target.}
 }
 \description{
-This function allows you to search the DNA oligo for guding RNA for CRISPR-cas9 and/or CRISPR-Cas12a system with aim to specifically cut 18S rRNA genes sequences of hosts but not protists and fungus. The database is build based on all available taxa in SILVA 18S SSU database version 119 (July 2014)
+This function allows you to search the target-site oligonucletide sequence of gRNA in the gRNA-targe-site database based on the input name of the host species.
 }
 \examples{
-search.db.byname(query="Homo sapiens")
-search.db.byname(query="Salmon")
-search.db.byname(query="Mollusca")
-search.db.byname(query="Crassostrea")
+search.db.byname(query="Homo sapiens", cas="Cas9")
+search.db.byname(query="Salmon", cas="Cas9")
+search.db.byname(query="Mollusca", cas="Cas9")
+search.db.byname(query="Crassostrea", cas="Cas9")
 Please be noted that the name of host species or taxonomic group needs to be a legistimal names appeared in SILVA SSU 18S database.
 }
 \keyword{search.db.byname}
