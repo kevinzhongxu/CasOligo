@@ -1,12 +1,5 @@
 
 
----
-output:
-  html_document: default
-  word_document: default
----
-
-
 # CasOligo
 ***
 
@@ -18,7 +11,7 @@ To facilitate application of CCSAS, we designed gRNA-taxon-sites and gRNAs for a
 &nbsp;
 
 
-![](/home/kevin/Desktop/rpackage/github/20200415c_partial/CasOligo/inst/extdata/oligo_distribution_among_taxa.png)
+![](https://github.com/kevinzhongxu/CasOligo/tree/master/inst/extdata/oligo_distribution_among_taxa.png)
 
 &nbsp;
 &nbsp;
