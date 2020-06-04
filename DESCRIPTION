@@ -1,10 +1,10 @@
 Package: CasOligo
 Type: Package
-Title: A R package to search the gRNA-target-sequence oligo for designing the taxon-specific guide RNA used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant)
+Title: A R package to search the gRNA-target-site oligo for designing the taxon-specific guide RNA used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant)
 Version: 0.1.1
 Author: Kevin Xu ZHONG
 Maintainer: Kevin Xu ZHONG <xzhong@eoas.ubc.ca>
-Description: A R package to search the gRNA-target-sequence oligo for designing the taxon-specific guide RNA used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant)
+Description: A R package to search the gRNA-target-site oligo for designing the taxon-specific guide RNA used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant)
 License: MIT license
 Encoding: UTF-8
 LazyData: true

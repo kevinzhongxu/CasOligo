@@ -3,9 +3,7 @@
 \docType{data}
 \name{pacific_oyster_18S_V4_3seqs}
 \alias{pacific_oyster_18S_V4_3seqs}
-\title{pacific_oyster_18S_V4_3seqs:
-18S rRNA gene sequences of pacific oyster at V4 region that amplified by primers "TAReuk454FWD1 and TAReukREV3" (Stoeck et al., 2010).
-This serves as an example of input fasta file for cas9.gRNA.oligo1m, and cas12a.gRNA.oligo1m.}
+\title{pacific_oyster_18S_V4_3seqs:}
 \format{
 A data frame
 }
@@ -13,7 +11,6 @@ A data frame
 data(pacific_oyster_18S_V4_3seqs)
 }
 \description{
-pacific_oyster_18S_V4_3seqs:
 18S rRNA gene sequences of pacific oyster at V4 region that amplified by primers "TAReuk454FWD1 and TAReukREV3" (Stoeck et al., 2010).
 This serves as an example of input fasta file for cas9.gRNA.oligo1m, and cas12a.gRNA.oligo1m.
 }

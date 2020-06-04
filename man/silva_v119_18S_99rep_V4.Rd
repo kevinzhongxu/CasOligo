@@ -3,8 +3,7 @@
 \docType{data}
 \name{silva_v119_18S_99rep_V4}
 \alias{silva_v119_18S_99rep_V4}
-\title{silva_v119_18S_99rep_V4:
-Reference database of the 18S rRNA gene at V4 region amplified by primers TAReuk454FWD1 and TAReukREV3 (Stoeck et al., 2010), which uses for the identify the gRNA-target-sequence oligos.}
+\title{silva_v119_18S_99rep_V4:}
 \format{
 A DNAString fasta input
 }
@@ -12,7 +11,6 @@ A DNAString fasta input
 data(silva_v119_18S_99rep_V4)
 }
 \description{
-silva_v119_18S_99rep_V4:
 Reference database of the 18S rRNA gene at V4 region amplified by primers TAReuk454FWD1 and TAReukREV3 (Stoeck et al., 2010), which uses for the identify the gRNA-target-sequence oligos.
 }
 \examples{
