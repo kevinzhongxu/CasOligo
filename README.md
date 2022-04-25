@@ -3,7 +3,7 @@
 # CasOligo
 ***
 
-CasOligo is a R package to identify the 20nt gRNA-target-site oligonucleotide sequence within the 18S rRNA gene for designing the taxon-specific gRNA, which is used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS, Zhong et al., 2020) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant). Taxon-specific gRNA allows directing the Cas nuclease to cut specifically the 18S rRNA gene of desired hosts, but not of protists and fungi. This results in a sequencing-library highly enriched in 18S amplicons from microeukayotes, allowing for high-resolution surveys of the taxonomic composition and structure of the eukaryotic microbes associated with the host. CCSAS provides a new and powerful way to obtain high-resolution taxonomic data for the eukaryotic microbiomes of plants, animals and other metazoa. 
+CasOligo is a R package to identify the 20nt gRNA-target-site oligonucleotide sequence within the 18S rRNA gene for designing the taxon-specific gRNA, which is used for CRISPR-Cas Selective Amplicon Sequencing (CCSAS, Zhong et al., 2020) to assess the eukaryotic microbiome of hosts (e.g. metazoans, plant). Taxon-specific gRNA allows directing the Cas nuclease to cut specifically the 18S rRNA gene of desired hosts, but not that of protists and fungi. This results in a sequencing-library highly enriched in 18S amplicons from microeukayotes, allowing for high-resolution surveys of the taxonomic composition and structure of the eukaryotic microbes associated with the host. CCSAS provides a new and powerful way to obtain high-resolution taxonomic data for the eukaryotic microbiomes of plants, animals and other metazoa. 
 
 To facilitate the application of CCSAS, we identified gRNA-target-sites for almost all metazoan and metaphyta taxa that are currently available at SILVA (Quast et al., 2003), creating a gRNA-taxon-site database for researchers who want to apply to their own organisms for various purposes. Beyond that, the CasOligo package provides an oligonucleotide design function, Cas9.gRNA.oligo2 function, that can be used to design custom gRNA-target-sites for any gene for which the sequence is known and there is a reference database, including genes encoding other regions of 18S rRNA (e.g. 16S, 23S or ITS), or metabolic genes (e.g. COX1). Thus, CCSAS makes it possible to study the genetic diversity of any gene in complex systems, including those that are rare, by removing any sequence that would otherwise dominate the data. The sequence-specific removal of any amplicon has a wide range of applications, including pathogen diagnosis, and studies of symbiosis and microbiome therapy.
 
@@ -11,7 +11,7 @@ To facilitate the application of CCSAS, we identified gRNA-target-sites for almo
 &nbsp;
 
 
-![](https://github.com/kevinzhongxu/CasOligo/tree/master/inst/extdata/oligo_distribution_among_taxa.png)
+![](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-021-01180-0/figures/5)
 **Fig.1** Distribution of the number of sgRNA-target-sites across metazoans and plant taxa for designing taxon-specific and CRISPR-Cas9 compatible gRNA.
 
 
@@ -34,7 +34,7 @@ To facilitate the application of CCSAS, we identified gRNA-target-sites for almo
 &nbsp;
 &nbsp;
 
-# How does the oligonucleotide-designing algorithm works?
+# How does the algorithm work?
 ***
 
   * For a given 18S rRNA gene sequence in fasta format, the algorithm searches, at both forward and reverse DNA strand, the 20nt gRNA-target-site oligonucleotides that contain at PAM sequence for the recognition of CRISPR-Cas9 or CRISPR-Cas12a.
@@ -80,9 +80,9 @@ This package depends on the pre-installation of following R package:
 ***
 &nbsp;
 
-If you use CasOligo in a publication, please cite our article in [here](https://www.biorxiv.org/content/10.1101/2020.06.02.130807v1):
+If you use CasOligo in a publication, please cite our article in [here](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-021-01180-0):
 
-  Zhong KX, Cho A, Deeg CM, Chan AM & Suttle CA. (2020) The use of CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to reveal the eukaryotic microbiome of metazoans. xxxx xx(xx): xxxx. https://www.biorxiv.org/content/10.1101/2020.06.02.130807v1
+  Zhong KX, Cho A, Deeg CM, Chan AM & Suttle CA. (2021) The use of CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to reveal the eukaryotic microbiome of metazoans. Microbiome 9, 230. https://doi.org/10.1186/s40168-021-01180-0.
 
 &nbsp;
 &nbsp;
@@ -164,7 +164,7 @@ search.db.byname(query="Crassostrea gigas", cas="Cas12a")
   
 ```
 
-If you want to know the cut detail of of this gRNA-target-site, then you can use search.db.byid function as follows. 
+If you want to know more details of of this gRNA-target-site, then you can use search.db.byid function as follows. 
 
 ```r
 search.db.byid(query="ID_of_the_gRNA-target-site", cas="Name_of_Cas")
@@ -183,7 +183,7 @@ Quast, C. et al. The SILVA ribosomal RNA gene database project: improved data pr
 
 Stoeck, T. et al. Multiple marker parallel tag environmental DNA sequencing reveals a highly complex eukaryotic community in marine anoxic water. Mol. Ecol. 19, 21–31 (2010).
 
-Zhong KX, Cho A, Deeg CM, Chan AM & Suttle CA. The use of CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to reveal the eukaryotic microbiome of metazoans. xxx xx(xx): xxxx (2020). https://www.biorxiv.org/content/10.1101/2020.06.02.130807v1
+Zhong KX, Cho A, Deeg CM, Chan AM & Suttle CA. (2021) The use of CRISPR-Cas Selective Amplicon Sequencing (CCSAS) to reveal the eukaryotic microbiome of metazoans. Microbiome 9, 230. https://doi.org/10.1186/s40168-021-01180-0.
 
 &nbsp;
 
