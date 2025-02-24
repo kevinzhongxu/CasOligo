@@ -15,7 +15,7 @@ The taxon-specific gRNA-target-site database for eukaryotic microbiome study in 
 
 
 ![](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-021-01180-0/figures/5)
-![](https://figshare.com/ndownloader/files/52552991/preview/52552991/preview.jpg)
+![](https://figshare.com/articles/dataset/_strong_Taxon-specific_gRNA-target-site_database_for_eukaryotic_microbiome_study_in_metazoans_and_plants_using_CRISPR-Cas_Selective_Amplicon_Sequencing_CCSAS_strong_/23605707?file=52552991)
 **Fig.1** Distribution of the number of sgRNA-target-sites across metazoans and plant taxa for designing taxon-specific and CRISPR-Cas9 compatible gRNA.
 
 
